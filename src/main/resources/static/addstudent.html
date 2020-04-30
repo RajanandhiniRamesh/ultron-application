@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+    <title>Altimetrik Drive</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+       
+    <!-- Main css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script	src="/js/addstudent.js"></script>
+</head>
+
+
+<script>
+function goBack() {
+  window.history.back()
+}
+</script>
+
+<body>
+
+    <div class="main">
+        <div class="container">
+            <button class="btn btn-primary"
+ onclick="goBack()">Back</button>
+            
+                <div class="signup-form">
+                
+                    <form method="POST" class="register-form" id="register-form">
+					<div class="text-left">
+						<h2 class="text-center">Registration Form - New College
+							Graduates (NCG) Hiring at Altimetrik</h2>
+						<h3>Shortlisted candidates will be invited for Playground
+							sessions and face-to-face interview process directly to
+							Chennai/Bengaluru/Pune</h3>
+						<hr>
+
+						<div class="form-row">
+							<div class="form-group">
+								<label for="email">Altimetrik Employee Email address *</label> <input
+									type="email" name="email" id="email" />
+							</div>
+							<div class="form-group">
+								<label for="employeeName">Altimetrik Employee Full Name
+								</label> <input type="text" name="employeeName" id="employeeName" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="employeeId">Altimetrik Employee Employee ID </label>
+							<input type="text" name="employeeId" id="employeeId" />
+						</div>
+
+						<div class="form-group">
+							<label for="candidateName">Candidate Full Name *</label> <input
+								type="text" name="candidateName" id="candidateName" required />
+						</div>
+
+						<div class="form-group">
+							<label for="candidateEmail">Email Address *</label> <input
+								type="email" name="candidateEmail" id="candidateEmail" required />
+						</div>
+						<div class="form-group">
+							<label for="dob">Date of Birth *</label> 
+							<input type="date" data-date="" data-date-format="DD MMMM YYYY" value="2015-08-09"
+							name="dob" id="dob" required />
+						</div>
+						<div class="form-group">
+							<label for="contactNo">Contact Number *</label> <input
+								type="text" name="contactNo" id="contactNo" required />
+						</div>
+
+
+						<div class="form-radio">
+							<div class="form-group">
+								<label for="gender" class="radio-label">Gender * <br></label>
+								<div id="gender-radio"></div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="nationality">Nationality </label> <input type="text"
+								name="nationality" id="nationality" required />
+						</div>
+
+
+						<div class="form-group">
+							<label for="currentLocation">Current Location </label> <input
+								type="text" name="currentLocation" id="currentLocation" required />
+						</div>
+
+						
+
+						<div class="form-row">
+							<div class="form-group">
+							<div class = "myselect2">
+								<label for="country">Country </label>
+								<div class="form-select">
+									<select name="country" id="country-dropdown">
+
+									</select> <span class="select-icon"><i
+										class="zmdi zmdi-chevron-down"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+						<div class="form-row">
+							<div class="form-group">
+							<div class="myselect2">
+								<label for="state">State </label>
+								<div class="form-select">
+									<select name="state" id="state-dropdown">
+
+									</select> <span class="select-icon"><i
+										class="zmdi zmdi-chevron-down"></i></span>
+								</div>
+							</div>
+						</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group">
+								<label for="city">City </label>
+								<div class="form-select">
+									<select name="city" id="city-dropdown">
+
+									</select> <span class="select-icon"><i
+										class="zmdi zmdi-chevron-down"></i></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="pincode">Pincode :</label> <input type="text"
+								name="pincode" id="pincode">
+						</div>
+
+
+
+						<div class="form-radio">
+							<div class="form-group">
+								<label for="prefferedLocatioin" class="radio-label">
+									Preferred location to attend the drive* <br>
+								</label>
+								<div class="form-radio-item">
+									<input type="radio" name="prefferedlocation" value="1"
+										id="Bengaluru" checked=""> <label for="Bengaluru">Bengaluru<br></label>
+									<span class="check"></span>
+								</div>
+								<div class="form-radio-item">
+									<input type="radio" name="prefferedlocation" value="2"
+										id="Chennai"> <label for="Chennai">Chennai<br></label>
+									<span class="check"></span>
+								</div>
+								<div class="form-radio-item">
+									<input type="radio" name="prefferedlocation" value="3"
+										id="Pune"> <label for="Pune">Pune<br></label> <span
+										class="check"></span>
+								</div>
+							</div>
+						</div>
+						
+						</div>
+
+
+
+
+
+					<div class="form-group">
+                            <label for="collegeName">College Name* </label>
+                            <input type="text" name="collegeName" id="collegeName">
+                        </div>
+                        
+                        <div class="form-radio">
+						<div class="form-group">
+                            <label for="courseName" class="radio-label">Course Name * <br></label>
+                            <div id="coursename-radio">
+	                         </div>
+						</div>
+                        </div>    
+						
+						<div class="form-group">
+                            <label for="year">Year of Passout* </label>
+                            <input type="number" name="year" id="year" />
+                        </div>
+						<div class="form-group">
+                            <label for="scoreNineteen">Overall Aggregate Score (2019 Pass out)* </label>
+                            <input type="text" name="scoreNineteen" id="scoreTwenty" />
+                        </div>
+						<div class="form-group">
+                            <label for="scoreTwenty">Aggregate Score (Until 6th Semester- 2020 Pass outs)* </label>
+                            <input type="text" name="scoreTwenty" id="scoreNineteen" />
+                        </div>
+						<div class="form-group">
+                            <label for="twelveMark">12th Percentage/Percentile* </label>
+                            <input type="text" name="twelveMark" id="twelveMark" />
+                        </div>
+						<div class="form-group">
+                            <label for="tenMark">10th Percentage/Percentile* </label>
+                            <input type="text" name="tenMark" id="tenMark" />
+                        </div>
+						
+						  <div class="form-radio">
+						<div class="form-group">
+                            <label for="willingnessrelocate" class="radio-label">Willingness Relocate * <br></label>
+                            <div id="willingnessrelocate-radio">
+	                         </div>
+						</div>    
+						
+						
+						</div>
+	                         
+                       			<div class="form-radio">
+                       			<div class="form group">
+                       			<label for="driveattending" class="radio-label">If
+									shortlisted, are you willing to attend the placement drive at
+									Altimetrik* <br>
+								</label>
+								<div id="driveattending-radio"></div>
+								
+								</div>
+									</div>
+								
+
+							<div class="form-group">
+								<label for="resume">Resume* </label> <input type="file"
+									name="resume" id="resume" size="50" />
+							</div>
+							
+							
+
+							<div class="form-submit">
+								<input type="submit" value="Reset All" class="submit"
+									name="reset" id="reset" /> 
+									<input type="button" value="Submit"
+									class="submit" name="submit" id="saveStudent" />
+							</div></form>
+                    </div>
+                </div>
+                 <!-- JS -->
+    
+                 
+			</body>
+		</html>
+
+
+
+
+
+
+
+
+
+
+

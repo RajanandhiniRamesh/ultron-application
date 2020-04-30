@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Users</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	
+</head>
+<body>
+
+	<div class="container my-2">
+		<div class="card">
+			<div class="card-body">
+				<div class="container my-9">
+
+					<a href="/addstudent.html" class="btn btn-primary">
+					<i class="fas fa-user-plus ml-2"> Add Student</i></a>
+					
+					<a href="/index.html" class="btn btn-primary" id="getStudentsDetails"> 
+					<i class='fas fa-users'>All Students</i>
+					</a> 
+					
+					<a href="/index.html" class="btn btn-primary" id="duplicateStudent"> 
+					<span  class="glyphicon glyphicon-duplicate"></span> Duplicate </a>
+
+				</div> 
+		
+					
+					<div class="col-md-8">
+						<h2 id="noStudents">No Students yet!</h2>
+						<div>
+							<table class="table table-striped table-responsive-md">
+								<thead>
+									<tr>
+										<th>Employee Email</th>
+										<th>Employee Name</th>
+										<th>Employee Id</th>
+										<th>Candidate Name</th>
+										<th>Candidate Email</th>
+										<th>Date Of Birth(DOB)</th>
+										<th>Contact No</th>
+										
+										<th>GenderName</th>
+										<th>Nationality</th>
+										<th>Current Location</th>
+										
+										<th>Country Name</th>
+										
+										<th>State Name</th>
+										
+										<th>City Name</th>
+										<th>Pin code</th>
+										
+										<th>Location Name</th>
+										<th>College Name</th>
+										
+										<th>Course Name</th>
+										<th>Year</th>
+										<th>Score Nineteen</th>
+										<th>Score Twenty</th>
+										<th>twelveMark</th>
+										<th>tenMark</th>
+										
+										<th>willingnessRelocate Name</th>
+										
+										<th>driveAttending Name</th>
+										<th>fileName</th>
+										<th>Edit</th>
+										<th>Delete</th>										
+								</tr>
+								</thead>
+								<tbody id = "studentList">
+								</tbody>
+								
+								
+							</table>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+</body>
+<script
+	src="/js/index.js"></script>
+</html>
